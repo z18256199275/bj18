@@ -1,5 +1,9 @@
 from Django.http import HttpResponse
-
+from Django.shortcuts import redirect
 
 def index(request):
 	return HttpResponse('index')
+
+
+def index2(request):
+	return redirect('/index')
